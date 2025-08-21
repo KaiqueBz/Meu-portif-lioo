@@ -12,7 +12,7 @@ if (toggle && nav) {
 
 // ========== DARK/LIGHT MODE ==========
 const themeToggle = document.querySelector('.theme-toggle');
-console.log("Botão encontrado:", themeToggle); // 🔎 Teste
+console.log("Botão encontrado:", themeToggle);
 
 if (themeToggle) {
   const saved = localStorage.getItem('theme');
@@ -45,26 +45,8 @@ document.querySelectorAll('.tilt').forEach(card => {
   });
 });
 
-// ========== SCROLL SUAVE ==========
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-    const targetId = this.getAttribute('href');
-    // só aplica scroll suave se for âncora válida (#algum-id)
-    if (targetId && targetId.startsWith("#") && targetId.length > 1) {
-      e.preventDefault();
-      const target = document.querySelector(targetId);
-      if (target) {
-        window.scrollTo({
-          top: target.offsetTop - 60, // ajuste para não cobrir o header
-          behavior: 'smooth'
-        });
-      }
-    }
-  });
-});
-
 // ========== PARTÍCULAS DE FUNDO ==========
-const canvas = document.getElementById("bg-particles"); // corrigido (sem "./")
+const canvas = document.getElementById("bg-particles"); // corrigido
 if (canvas) {
   const ctx = canvas.getContext("2d");
   let particles = [];
@@ -108,7 +90,6 @@ if (canvas) {
 // ========== BOTÃO VOLTAR PARA CIMA ==========
 document.addEventListener("DOMContentLoaded", () => {
   const backToTop = document.getElementById("backToTop");
-
   if (!backToTop) return;
 
   window.addEventListener("scroll", () => {
