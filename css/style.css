@@ -427,7 +427,7 @@ h2 {
   --shadow: 0 6px 18px rgba(0,0,0,0.4);
 }
 .light-mode {
-  --bg: #bfbfd1;
+  --bg: #dcdce9;
   --text: #111;
   --primary: #6366f1;
   --secondary: #0ea5e9;
