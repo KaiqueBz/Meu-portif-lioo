@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kaique Biazon — Portfólio</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Canvas -->
+  <canvas id="bg-particles" aria-hidden="true"></canvas>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <a href="#topo" class="logo">Kaique.dev</a>
+
+    <nav id="primary-nav" class="nav" aria-label="Navegação principal">
+      <a href="#sobre">Sobre</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#skills">Skills</a>
+      <a href="#contato">Contato</a>
+      <a class="btn" href="./assets/KaiqueBiazon.pdf" download>📄 Baixar CV</a>
+    </nav>
+
+    <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-controls="primary-nav"
+      aria-expanded="false">☰</button>
+    <button class="theme-toggle" aria-label="Alternar tema">🌙</button>
+  </header>
+
+
+  <main id="topo">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <span class="eyebrow">Disponível para Estágio / Júnior</span>
+          <h1>Olá, eu sou <span class="grad">Kaique Biazon</span> 👋</h1>
+          <p class="subtitle">Engenharia de Software (4º) · Web Development · Java</p>
+          <p>
+            O sucesso é a soma de pequenos esforços repetidos diariamente. 💡
+            Foco em <strong>Java</strong>, <strong>JavaScript</strong>, <strong>HTML</strong> e <strong>CSS</strong>.
+          </p>
+
+          <div class="hero-badges">
+            <span>Java</span>
+            <span>JavaScript</span>
+            <span>HTML & CSS</span>
+            <span>Modelagem</span>
+          </div>
+
+          <div class="hero-buttons">
+            <a href="#projetos" class="btn">Ver Projetos</a>
+            <a href="./assets/KaiqueBiazon.pdf" class="btn ghost">📄 Baixar CV</a>
+          </div>
+        </div>
+
+        <div class="hero-photo">
+          <div class="photo-frame">
+            <img src="./assets/imgs/Imagem do WhatsApp de 2025-08-19 à(s) 21.40.23_593fa856.jpg"
+              alt="Foto de Kaique Biazon">
+          </div>
+        </div>
+      </div>
+
+      <a href="#sobre" class="scroll-cue" aria-label="Ir para a seção Sobre">↓</a>
+    </section>
+
+
+    <!-- SOBRE -->
+    <section id="sobre" class="section">
+      <div class="container">
+        <h2>Sobre Mim</h2>
+        <div class="sobre-grid">
+
+          <div class="sobre-card">
+            <div class="icon">🎓</div>
+            <h3>Formação</h3>
+            <p>Estudante de <strong>Engenharia de Software (4º semestre)</strong> e participante do Bootcamp
+              <strong>Java Backend Developer – Santander e DIO</strong>.
+            </p>
+          </div>
+
+          <div class="sobre-card">
+            <div class="icon">🛠️</div>
+            <h3>Experiências</h3>
+            <p>Experiência em atendimento ao público e vendas, desenvolvendo <strong>comunicação, empatia, resolução de
+                problemas e trabalho em equipe</strong>.</p>
+          </div>
+
+          <div class="sobre-card">
+            <div class="icon">🚀</div>
+            <h3>Objetivo</h3>
+            <p>Busco minha <strong>primeira oportunidade em TI</strong> para aplicar meus conhecimentos e evoluir junto
+              a um time inovador.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    </section>
+
+    <!-- PROJETOS -->
+    <section id="projetos" class="section alt">
+      <div class="container">
+        <h2>Projetos</h2>
+        <div class="projects-grid">
+
+          <article class="project-card tilt">
+            <div class="project-img">
+              <img src="./assets/imgs/spotify-img.jpeg" alt="Spotify Clone preview">
+            </div>
+            <div class="project-content">
+              <h3>Spotify Clone</h3>
+              <p>Interface inspirada no Spotify aplicando conceitos de responsividade e boas práticas de CSS. Utilizando
+                Api</p>
+              <div class="project-links">
+                <a href="https://kaiquebz.github.io/spotify-imers-o/" target="_blank" class="btn tiny">🔗 Ver Online</a>
+                <a href="https://github.com/KaiqueBz/spotify-imers-o" target="_blank" class="btn ghost tiny">Código</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card tilt">
+            <div class="project-img">
+              <img src="./assets/imgs/yugioh-img.jpeg" alt="Yu-Gi-Oh API preview">
+            </div>
+            <div class="project-content">
+              <h3>Yu-Gi-Oh API</h3>
+              <p>Catálogo dinâmico de cartas consumindo API pública, reforçando habilidades em JavaScript assíncrono.
+              </p>
+              <div class="project-links">
+                <a href="https://kaiquebz.github.io/clone-YuGiOh/" target="_blank" class="btn tiny">🔗 Ver Online</a>
+                <a href="https://github.com/KaiqueBz/clone-YuGiOh" target="_blank" class="btn ghost tiny">Código</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card tilt">
+            <div class="project-img">
+              <img src="./assets/imgs/Java-Emblem-500x313.webp" alt="Pet Shop preview">
+            </div>
+            <div class="project-content">
+              <h3>Pet Shop</h3>
+              <p>Sistema CRUD para gestão de clientes e pets, desenvolvido com foco em organização e usabilidade.</p>
+              <div class="project-links">
+                <a href="https://github.com/KaiqueBz/Dio-PetShop" target="_blank" class="btn ghost tiny">Código</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2>Skills</h2>
+        <p class="skills-intro">Principais tecnologias e ferramentas que utilizo no dia a dia 👨‍💻</p>
+
+        <div class="skills-grid">
+          <div class="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+            <p>Java</p>
+          </div>
+          <div class="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+              alt="JavaScript">
+            <p>JavaScript</p>
+          </div>
+          <div class="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+            <p>HTML5</p>
+          </div>
+          <div class="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+            <p>CSS3</p>
+          </div>
+          <div class="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+            <p>Git</p>
+          </div>
+          <div class="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+            <p>GitHub</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- CONTATO -->
+    <section id="contato" class="section alt">
+      <div class="container contato-box">
+        <h2>Contato</h2>
+        <p class="contato-sub">Está procurando alguém com energia, vontade de aprender e crescer? Vamos conversar!</p>
+
+        <div class="contato-grid">
+          <a href="mailto:kaiquebiazon1@gmail.com" target="_blank" class="contato-card email">
+            <div class="icon">✉</div>
+            <h3>Email</h3>
+            <p>kaiquebiazon1@gmail.com</p>
+          </a>
+
+          <a href="https://github.com/KaiqueBz" target="_blank" class="contato-card github">
+            <div class="icon">🐙</div>
+            <h3>GitHub</h3>
+            <p>@KaiqueBz</p>
+          </a>
+
+          <a href="https://www.linkedin.com/in/kaique-biazon-35720b304" target="_blank" class="contato-card linkedin">
+            <div class="icon">🔗</div>
+            <h3>LinkedIn</h3>
+            <p>/in/kaique-biazon</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+
+  <footer class="footer">
+    <p>© 2025 - Kaique Biazon | Desenvolvido com dedicação 💻</p>
+  </footer>
+
+  <!-- Botão Voltar ao Topo -->
+  <button id="backToTop" aria-label="Voltar ao topo">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="18 15 12 9 6 15"></polyline>
+  </svg>
+</button>
+
+
+  <script src="./js/app.js"></script>
+</body>
+</html>
