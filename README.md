@@ -3,7 +3,7 @@
 Bem-vindo ao meu portfólio!  
 Este projeto foi desenvolvido com foco em **criatividade, minimalismo e profissionalismo**, destacando minhas habilidades e projetos na área de **Engenharia de Software**.
 
-🔗 **Acesse online:** [kaique-portfolio.vercel.app](#) <!-- substitua pela URL quando publicar -->
+🔗 **Acesse online:** https://kaiquebz.github.io/Meu-portifolio/ <!-- substitua pela URL quando publicar -->
 
 ---
 
