@@ -10,7 +10,7 @@ if (toggle && nav) {
   });
 }
 
-// DARK/LIGHT MODE
+// ========== DARK/LIGHT MODE ==========
 const themeToggle = document.querySelector('.theme-toggle');
 console.log("Botão encontrado:", themeToggle); // 🔎 Teste
 
@@ -30,8 +30,6 @@ if (themeToggle) {
   });
 }
 
-
-
 // ========== TILT 3D NOS CARDS ==========
 document.querySelectorAll('.tilt').forEach(card => {
   card.addEventListener('mousemove', e => {
@@ -49,9 +47,10 @@ document.querySelectorAll('.tilt').forEach(card => {
 
 // ========== SCROLL SUAVE ==========
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function(e) {
+  anchor.addEventListener('click', function (e) {
     const targetId = this.getAttribute('href');
-    if (targetId.startsWith("#") && targetId.length > 1) {
+    // só aplica scroll suave se for âncora válida (#algum-id)
+    if (targetId && targetId.startsWith("#") && targetId.length > 1) {
       e.preventDefault();
       const target = document.querySelector(targetId);
       if (target) {
@@ -65,7 +64,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // ========== PARTÍCULAS DE FUNDO ==========
-const canvas = document.getElementById("./bg-particles"); // Caminho ajustado
+const canvas = document.getElementById("bg-particles"); // corrigido (sem "./")
 if (canvas) {
   const ctx = canvas.getContext("2d");
   let particles = [];
@@ -106,8 +105,7 @@ if (canvas) {
   animate();
 }
 
-// animação voltar para cima
-
+// ========== BOTÃO VOLTAR PARA CIMA ==========
 document.addEventListener("DOMContentLoaded", () => {
   const backToTop = document.getElementById("backToTop");
 
